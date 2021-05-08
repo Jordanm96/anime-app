@@ -1,6 +1,6 @@
-/*---------------TAGS---------------*/
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@500&family=Shojumaru&display=swap');
 
+/*---------------CLASS---------------*/
 .layout {
   display: flex;
   flex-direction: column;
@@ -16,8 +16,3 @@
 .layout-children {
   font-family: 'IBM Plex Sans', sans-serif;
 }
-/*---------------CLASS---------------*/
-
-/*---------------IDs---------------*/
-
-/*---------------Media Queries---------------*/

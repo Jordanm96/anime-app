@@ -1,19 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Shojumaru&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@500&family=Shojumaru&display=swap');
-/*---------------TAGS---------------*/
 
+nav {
+  margin-bottom: 5%;
+}
 
-
-/*---------------CLASS---------------*/
+/*---------------CLASSES---------------*/
 
 .nav {
     padding: 10px 20px;
     background-color: rgba(0, 0, 0, 0.5);
-    /* margin-bottom: 50px; */
 }
-nav {
-  margin-bottom: 5%;
-}
+
 
 .links {
     display: inline;
@@ -91,10 +89,6 @@ nav {
         font-size: 25px;
         width: 50%;
     }
-
-    /* .userWelcome {
-        padding-left: 255px;
-    } */
 
     #appName {
         font-size: 60px;
