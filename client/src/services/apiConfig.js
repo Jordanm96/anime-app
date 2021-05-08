@@ -20,4 +20,5 @@ api.interceptors.request.use(async function (options) {
     console.log('Request error: ', error)               
     return Promise.reject(error)
 });
+
 export default api
