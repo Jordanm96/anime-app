@@ -34,8 +34,8 @@ const CreateShow = (props) => {
   if (isCreated) {
     return <Redirect to={`/shows`} />;
   }
+
   return (
-    // For whatever reason I can not type in my input field anymore...
     <Layout user={props.user}>
       <Form className="addSeries-form-container" onSubmit={handleSubmit}>
         <h2 className="addSeries-form-title">Add Series</h2>
@@ -49,7 +49,6 @@ const CreateShow = (props) => {
             required
             autoFocus
             onChange={handleChange}
-            // id="input-title"
           />
         </Form.Group>
         <Form.Group controlId="formBasicEmail">
@@ -62,7 +61,6 @@ const CreateShow = (props) => {
             required
             autoFocus
             onChange={handleChange}
-            // id="input-duration"
           />
         </Form.Group>
         <Form.Group controlId="formBasicEmail">
@@ -75,7 +73,6 @@ const CreateShow = (props) => {
             required
             autoFocus
             onChange={handleChange}
-            // id="input-image"
           />
         </Form.Group>
         <Form.Group controlId="formBasicEmail">
@@ -90,7 +87,6 @@ const CreateShow = (props) => {
             autoFocus
             onChange={handleChange}
             className="form-control"
-            // id="input-plot"
           />
         </Form.Group>
         <Button type="submit" id="add-button">

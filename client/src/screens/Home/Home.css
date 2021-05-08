@@ -15,11 +15,9 @@
   font-size: 10px;
 }
 
-
 /*---------------Media Queries iPad---------------*/
 
 @media only screen and (min-width: 768px) {
-
     .homeStatement {
         font-size: 25px;
     }
@@ -45,7 +43,6 @@
 
 
 @media only screen and (min-width: 1366px) {
-    
     .homeStatement {
         font-size: 55px;
     }
