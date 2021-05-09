@@ -32,6 +32,7 @@ const EditShow = (props) => {
       [name]: value,
     });
   };
+
   const handleSubmit = async (event) => {
     event.preventDefault();
     const updated = await updateShow(id, show);
@@ -41,6 +42,7 @@ const EditShow = (props) => {
   if (isUpdated) {
     return <Redirect to={`/shows/${id}`} />;
   }
+  
   return (
     <Layout user={props.user}>
       <Form className="show-detail" onSubmit={handleSubmit}>

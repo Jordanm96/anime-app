@@ -10,6 +10,7 @@
   flex-wrap: nowrap;
   background-color: rgba(153, 178, 234, .7);
 }
+
 .addSeries-form-title {
   align-self: center;
   text-align: center;
@@ -17,12 +18,10 @@
   color: white;
   font-weight: bold;
 }
+
 .addSeries-form-label {
   font-size: 30px;
 }
-/* #input-title, #input-duration, #input-image, #input-plot {
-  font-size: 25px;
-} */
 
 #add-button {
   align-self: center;
@@ -41,8 +40,5 @@
   .addSeries-form-label {
     font-size: 20px;
   }
-  /* #input-title, #input-duration, #input-image, #input-plot {
-    font-size: 15px;
-  } */
   
 }

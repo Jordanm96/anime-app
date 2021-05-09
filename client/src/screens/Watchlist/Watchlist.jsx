@@ -17,7 +17,6 @@ const Watchlist = ({ user, watchlistShows, setWatchlistShows }) => {
     fetchWatchlist();
   }, [setWatchlistShows, user.id]);
 
-
   const showJSX = watchlistShows.map((show, index) => (
     <Show
       _id={show._id}

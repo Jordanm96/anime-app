@@ -16,16 +16,9 @@
   text-decoration: none;
   display: flex;
   justify-content: space-around;
-
-  /* justify-content: space-between; */
-  /* width: 40%; */
-  /* margin: 0 auto; */
 }
 
 .footer-link {
-  /* display: inline; */
-  /* align-items: stretch; */
-  /* justify-content: space-between; */
   color: white;
 }
 
@@ -35,27 +28,4 @@
 
 #icon a {
   color: white
-}
-
-/*---------------Media Queries iPad Pro---------------*/
-@media only screen and (max-width: 1366) {
-
-}
-
-
-/*---------------Media Queries iPad---------------*/
-@media only screen and (max-width: 1024) {
-
-}
-
-
-/*---------------Media Queries iPhone X---------------*/
-@media only screen and (max-width: 812) {
-
-}
-
-/*---------------Media Queries iPhone 6/7/8---------------*/
-@media only screen and (max-width: 375) {
-
-
 }

@@ -2,9 +2,8 @@ import api from "./apiConfig";
 import jwtDecode from "jwt-decode";
 
 export const signUp = async (credentials) => {
-  //credentials is whatever the user inputted into the form
   try {
-    const resp = await api.post("/sign-up", credentials); //at the "/sign-up" route, we're doing an axios post request with tthe credential object
+    const resp = await api.post("/sign-up", credentials); 
     localStorage.setItem("token", resp.data.token);
     const user = jwtDecode(resp.data.token);
     return user;
@@ -45,7 +44,7 @@ export const changePassword = async (passwords, user) => {
 export const verifyUser = async () => {
   const token = localStorage.getItem("token");
   if (token) {
-    const res = await api.get("/verify"); //this makes an axios request to the '/verify' route
+    const res = await api.get("/verify"); 
     return res.data;
   }
   return false;
