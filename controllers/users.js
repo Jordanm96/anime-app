@@ -83,6 +83,7 @@ const addToWatchlist = async (req, res) => {
     res.status(500).json({ error: error.message })
   }
 }
+
 const getUserWatchlist = async (req, res) => {
   try {
     const user = await User.findById(req.params.id);
@@ -91,11 +92,25 @@ const getUserWatchlist = async (req, res) => {
     res.status(500).json({ error: error.message })
   }
 }
+
+const deleteFromWatchlist = async (req, res) => {
+  try {
+    const user = await User.findById(req.params.id);
+    const updatedWatchlist = user.watchlist.filter(show => show._id.toString() !== req.params.showId);
+    user.watchlist = updatedWatchlist
+    await user.save();
+    res.json(user.watchlist)
+  } catch (error) {
+    res.status(500).json({ error: error.message })
+  }
+} 
+
 module.exports = {
-    signUp,
+    signUp, 
     signIn,
     verify,
     changePassword,
     addToWatchlist,
-    getUserWatchlist
+    getUserWatchlist,
+    deleteFromWatchlist
 }

@@ -8,7 +8,6 @@ const TOKEN_KEY = 'areallylonggoodkey'
         // res.locals.user = data
         next()
     } catch (error) {
-        console.log(error)
         res.status(403).send('Unauthorized')
     }
 }

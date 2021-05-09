@@ -30,7 +30,6 @@ const createShow = async (req, res) => {
       await show.save()
       res.status(201).json(show)
   } catch (error) {
-      console.log(error)
       res.status(500).json({ error: error.message })
   }
 }

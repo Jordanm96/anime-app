@@ -17,8 +17,6 @@ const CreateShow = (props) => {
 
   const handleChange = (event) => {
     const { name, value } = event.target;
-    console.log(name);
-    console.log(value);
     setShow({
       ...show,
       [name]: value,
